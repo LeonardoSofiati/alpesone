@@ -1,0 +1,14 @@
+*, body {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.conatiner{
+    margin-left: 285px;
+    margin-right: 285px;
+}
+
+.navbar {
+    height: 152px;
+}
