@@ -1,12 +1,58 @@
+:root {
+
+/* Colors: */
+--unnamed-color-bbbbbb: #BBBBBB;
+--unnamed-color-e6e6e6: #E6E6E6;
+--unnamed-color-25d366: #25D366;
+--unnamed-color-4d4d4d: #4D4D4D;
+--unnamed-color-ffffff: #FFFFFF;
+--unnamed-color-1c69d4: #1C69D4;
+---262626-texto-: #262626;
+---0653b6-hover-: #0653B6;
+--unnamed-color-666666: #666666;
+--unnamed-color-000000: #000000;
+
+/* Font/text values */
+--unnamed-font-family-bmw-type-web-all: BMW Type Web All;
+--unnamed-font-style-normal: normal;
+--unnamed-font-weight-300: 300px;
+--unnamed-font-weight-bold: bold;
+--unnamed-font-size-10: 10px;
+--unnamed-font-size-12: 12px;
+--unnamed-font-size-14: 14px;
+--unnamed-font-size-16: 16px;
+--unnamed-font-size-18: 18px;
+--unnamed-font-size-20: 20px;
+--unnamed-font-size-30: 30px;
+--unnamed-font-size-40: 40px;
+--unnamed-character-spacing-0: 0px;
+--unnamed-line-spacing-12: 12px;
+--unnamed-line-spacing-15: 15px;
+--unnamed-line-spacing-16: 16px;
+--unnamed-line-spacing-17: 17px;
+--unnamed-line-spacing-19: 19px;
+--unnamed-line-spacing-22: 22px;
+--unnamed-line-spacing-24: 24px;
+--unnamed-line-spacing-25: 25px;
+--unnamed-line-spacing-26: 26px;
+--unnamed-line-spacing-36: 36px;
+--unnamed-line-spacing-48: 48px;
+--unnamed-decoration-underline: underline;
+--unnamed-text-transform-uppercase: uppercase;
+}
+
+
 *, body {
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
 }
 
+
 .conatiner{
     margin-left: 285px;
     margin-right: 285px;
+    width: 100vw;
 }
 
 .navbar {
@@ -14,35 +60,113 @@
     background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     opacity: 1;
+    padding: 0px !important;
 }
 
 .containerHeader {
-    width: 100%;
-    padding-left: 285px;
-    padding-right: 285px;
+    height: 100%;
+    width: 100vw;
+    padding-left: 10%;
+    padding-right: 10%;
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
-    align-content: center;
-    border: 1px solid black;
+    justify-content:space-around;
+    align-items: space-around;
 }
 
 .containerHeaderMenu {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content:center;
     align-content: center;
 }
 
 .containerHeaderMenuContact {
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
+    justify-content: flex-start;
+    padding: 0px;
+    
+}
+
+.containerHeaderMenuContact li {
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: #000000 0% 0% no-repeat padding-box;
+    opacity: 1;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    margin-right: 25px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.containerHeaderMenuContact li:hover {
+    background-color: #575757;
+}
+
+.phoneIcon{
+    margin-right: 10px;
+}
+
+
+#whatsapp {
+    background-color: #25D366;
+}
+
+#whatsapp:hover {
+    background-color: #35AA61;
+}
+
+.containerHeaderMenuListContainer {
+    width: 80%;
+    margin-top: 10px;
 }
 
 .containerHeaderMenuList {
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
+    padding: 0px;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
 }
+
+.containerHeaderMenuList li {
+    cursor: pointer;
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonQuotation {
+    background-color: #1C69D4;
+    width: 100%;
+    border-radius: 0px;
+}
+
+.buttonQuotation:hover {
+    background-color: #0351BE;
+    width: 100%;
+    border-radius: 0px;
+}
+
+.grisTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
