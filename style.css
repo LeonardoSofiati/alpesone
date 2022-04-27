@@ -55,8 +55,16 @@
     width: 100vw;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+main {
+    margin-bottom: 70px;
+}
+
 .navbar {
-    height: 152px;
+    height: 120px;
     background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     opacity: 1;
@@ -74,6 +82,10 @@
     align-items: space-around;
 }
 
+.info {
+    font-size: 14px;
+}
+
 .containerHeaderMenu {
     width: 100%;
     display: flex;
@@ -87,6 +99,7 @@
     flex-direction: row;
     justify-content: flex-start;
     padding: 0px;
+    margin-top: 20px;
     
 }
 
@@ -108,6 +121,21 @@
     cursor: pointer;
 }
 
+.cardBody {
+    border: transparent
+}
+
+.card-body button {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.card-title {
+    font-weight: lighter;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
 .containerHeaderMenuContact li:hover {
     background-color: #575757;
 }
@@ -116,6 +144,13 @@
     margin-right: 10px;
 }
 
+#collapseOne {
+    position: absolute;
+    left: 0;
+    z-index: 99999999999999999;
+    width: 100vw;
+    background-color: white;
+}
 
 #whatsapp {
     background-color: #25D366;
@@ -126,11 +161,25 @@
 }
 
 .containerHeaderMenuListContainer {
-    width: 80%;
+    width: 70%;
+    height: 100%;
     margin-top: 10px;
+    border: none;
+}
+
+#accordionExample, .accordion {
+    border: none;
+    height: 50px;
+}
+
+.accordion-item  {
+ border: 0px;
+ padding: 0px;
 }
 
 .containerHeaderMenuList {
+    width: 100%;
+    height: 50%;
     display: flex;
     flex-direction: row;
     padding: 0px;
@@ -140,8 +189,43 @@
     cursor: pointer;
 }
 
+.accordion-button{
+    padding: 0px;
+    background-color: white;
+    border: none;
+}
+
+.accordion-button::after {
+    display: none;
+    border: none;
+    background-color: none;
+}
+
+.accordion-button::before {
+    display: none;
+    border: none;
+    background-color: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: white;
+    cursor: pointer;
+    font-size: 14px;
+    color: #666666;
+    font-weight: bold;
+    border: none;
+}
+
 .containerHeaderMenuList li {
     cursor: pointer;
+    font-size: 14px;
+    color: #666666;
+    font-weight: bold;
+    border: none;
+}
+
+.accordion-button .collapsed {
+    width: 80px;
 }
 
 .logoContainer {
@@ -150,16 +234,18 @@
     align-items: center;
 }
 
+.logoContainer img {
+    width: auto;
+    height: 75px;
+}
+
 .buttonQuotation {
     background-color: #1C69D4;
-    width: 100%;
     border-radius: 0px;
 }
 
 .buttonQuotation:hover {
     background-color: #0351BE;
-    width: 100%;
-    border-radius: 0px;
 }
 
 .grisTitle {
@@ -168,5 +254,177 @@
     align-items: center;
     margin-top: 40px;
     margin-bottom: 40px;
+}
+
+.cardLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: #666666;
+    padding-top: 20px;
+    font-size: 10px;
+}
+
+.cardLinks img{
+    height: 22px;
+    margin-left: 8px;
+    width: auto;
+    color: #666666;
+}
+
+footer{
+    background-color:#E6E6E6;
+    width: 100vw;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 9%;
+    padding-right: 9%;
+    height: 200px;
+}
+
+.footerText {
+    border-bottom: 1px solid #BBBBBB;
+}
+
+
+.footerText p {
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #262626;
+    opacity: 1;
+    margin-bottom: 30px;
+}
+
+.footerImages {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bmwLogoFooter img {
+    height: auto;
+    width: 45%;
+}
+
+.alpesLogoFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.alpesLogoFooter p {
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 0px;
+    color: #262626;
+    opacity: 1;
+}
+
+.alpesLogoFooter img {
+    height: auto;
+    width: 68%;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyrightFooter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.copyrightFooter p{
+    margin-bottom: 0px;
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #262626;
+    opacity: 1;
+}
+
+#quotationContainer {
+    position: absolute;
+    z-index: 999999;
+    width: 250px;
+    height: auto;
+    top: 23%;
+    padding: 5px;
+    right: 15%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+#quotationContainer form {
+    padding: 8px;
+}
+
+.form-control, .form-select{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #666666;
+    border-radius: 0px;
+}
+
+.form-control:focus,
+.form-floating:focus,
+.form-select:focus {
+    border-bottom: 1px solid #1C69D4;
+    box-shadow: none;
+}
+
+.quoteCheck {
+    margin-bottom: 10px;
+    font-size: 10px;
+    letter-spacing: 0px;
+    color: #666666;
+    opacity: 1;
+}
+
+.quoteCarIconContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px
+}
+
+.quoteCarIconContainer h6 {
+    margin: 0px;
+}
+
+.quoteCarIcon {
+    background: url('./icons/svg/carro.svg');
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.navbarCarousel {
+    margin-bottom: 0px;
+    bottom: -10px;
+}
+
+.carousel-dark .carousel-control-next, .carousel-dark .carousel-control-prev {
+    width: 20px;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+    width: 15px;
+}
+
+.accordion-body {
+    padding-left: 40px;
+    padding-right: 60px;
 }
 

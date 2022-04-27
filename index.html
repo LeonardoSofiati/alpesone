@@ -2,12 +2,15 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <title>BMW</title>
   <script src="script.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -16,26 +19,268 @@
     <div class="containerHeader">
       <div class="containerHeaderMenu">
         <ul class="containerHeaderMenuContact">
-          <li><img src="./icons/svg/Icon fone.png" class="phoneIcon"><div class="info">(21)2042-4442</div></li>
-          <li><img src="./icons/svg/Grupo de máscara 50.png" class="phoneIcon"><div class="info">Tour Virtual</div></li>
-          <li id="whatsapp"><img src="./icons/svg/Icon whatsapp.png" class="phoneIcon"><div class="info">Whatsapp</div></li>
+          <li><img src="./icons/svg/Icon fone.png" class="phoneIcon">
+            <div class="info">(21)2042-4442</div>
+          </li>
+          <li><img src="./icons/svg/Grupo de máscara 50.png" class="phoneIcon">
+            <div class="info">Tour Virtual</div>
+          </li>
+          <li id="whatsapp"><img src="./icons/svg/Icon whatsapp.png" class="phoneIcon">
+            <div class="info">Whatsapp</div>
+          </li>
         </ul>
-        <div class="containerHeaderMenuListContainer">
-          <ul class="containerHeaderMenuList">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-            <li>8</li>
-            <li>X</li>
-            <li>Z</li>
-            <li>M</li>
-            <li>i</li>
-            <li>Plug-in-Hybrid</li>
-          </ul>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item containerHeaderMenuListContainer">
+            <ul class="accordion-header containerHeaderMenuList" id="headingOne">
+              <li class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                1
+              </li>
+              <li class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                2
+              </li>
+              <li class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                3
+              </li>
+              <li class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                4
+              </li>
+              <li class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                5
+              </li>
+              <li class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                6
+              </li>
+              <li class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                7
+              </li>
+              <li class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                8
+              </li>
+              <li class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                X
+              </li>
+              <li class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                Z
+              </li>
+              <li class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                M
+              </li>
+              <li class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                i
+              </li>
+              <li class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                Plug
+              </li>
+            </ul>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div id="carouselExampleIndicators2" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators navbarCarousel">
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0"
+                      class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
+                      aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2"
+                      aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="row row-cols-1 row-cols-md-4 g-4">
+                        <div class="col">
+                          <div class="card h-100 cardBody">
+                            <img src="./imgs/veiculos/serie1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">BMW Série 1</h5>
+                              <div class="cardLinks">
+                                <div>Compartilhe</div>
+                                <img src="./icons/svg/facebook-default@2x.png" />
+                                <img src="./icons/svg/whatsapp-default@2x.png">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-100 cardBody">
+                            <img src="./imgs/veiculos/m3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">BMW M3 Competition</h5>
+                              <div class="cardLinks">
+                                <div>Compartilhe</div>
+                                <img src="./icons/svg/facebook-default@2x.png" />
+                                <img src="./icons/svg/whatsapp-default@2x.png">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-100 cardBody">
+                            <img src="./imgs/veiculos/m5.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">BMW M5</h5>
+                              <div class="cardLinks">
+                                <div>Compartilhe</div>
+                                <img src="./icons/svg/facebook-default@2x.png" />
+                                <img src="./icons/svg/whatsapp-default@2x.png">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-100 cardBody">
+                            <img src="./imgs/veiculos/x2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">BMW X2</h5>
+                              <div class="cardLinks">
+                                <div>Compartilhe</div>
+                                <img src="./icons/svg/facebook-default@2x.png" />
+                                <img src="./icons/svg/whatsapp-default@2x.png">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="row row-cols-1 row-cols-md-4 g-4">
+                        <div class="col">
+                          <div class="card h-100 cardBody">
+                            <img src="./imgs/veiculos/serie1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">BMW Série 1</h5>
+                              <div class="cardLinks">
+                                <div>Compartilhe</div>
+                                <img src="./icons/svg/facebook-default@2x.png" />
+                                <img src="./icons/svg/whatsapp-default@2x.png">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-100 cardBody">
+                            <img src="./imgs/veiculos/m3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">BMW M3 Competition</h5>
+                              <div class="cardLinks">
+                                <div>Compartilhe</div>
+                                <img src="./icons/svg/facebook-default@2x.png" />
+                                <img src="./icons/svg/whatsapp-default@2x.png">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-100 cardBody">
+                            <img src="./imgs/veiculos/m5.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">BMW M5</h5>
+                              <div class="cardLinks">
+                                <div>Compartilhe</div>
+                                <img src="./icons/svg/facebook-default@2x.png" />
+                                <img src="./icons/svg/whatsapp-default@2x.png">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-100 cardBody">
+                            <img src="./imgs/veiculos/x2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">BMW X2</h5>
+                              <div class="cardLinks">
+                                <div>Compartilhe</div>
+                                <img src="./icons/svg/facebook-default@2x.png" />
+                                <img src="./icons/svg/whatsapp-default@2x.png">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="row row-cols-1 row-cols-md-4 g-4">
+                        <div class="col">
+                          <div class="card h-100 cardBody">
+                            <img src="./imgs/veiculos/serie1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">BMW Série 1</h5>
+                              <div class="cardLinks">
+                                <div>Compartilhe</div>
+                                <img src="./icons/svg/facebook-default@2x.png" />
+                                <img src="./icons/svg/whatsapp-default@2x.png">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-100 cardBody">
+                            <img src="./imgs/veiculos/m3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">BMW M3 Competition</h5>
+                              <div class="cardLinks">
+                                <div>Compartilhe</div>
+                                <img src="./icons/svg/facebook-default@2x.png" />
+                                <img src="./icons/svg/whatsapp-default@2x.png">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-100 cardBody">
+                            <img src="./imgs/veiculos/m5.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">BMW M5</h5>
+                              <div class="cardLinks">
+                                <div>Compartilhe</div>
+                                <img src="./icons/svg/facebook-default@2x.png" />
+                                <img src="./icons/svg/whatsapp-default@2x.png">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-100 cardBody">
+                            <img src="./imgs/veiculos/x2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">BMW X2</h5>
+                              <div class="cardLinks">
+                                <div>Compartilhe</div>
+                                <img src="./icons/svg/facebook-default@2x.png" />
+                                <img src="./icons/svg/whatsapp-default@2x.png">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="logoContainer">
@@ -86,18 +331,19 @@
         <h1>ESCOLHA SEU BMW</h1>
       </div>
       <div class="row row-cols-1 row-cols-md-4 g-4">
-        <div class="col">
-          <div class="card h-100 cardBody">
+        <div class="col ">
+          <div class="cardcardBody">
             <img src="./imgs/veiculos/serie1.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">BMW Série 1</h5>
-              <button type="button" class="btn btn-primary buttonQuotation" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              <button type="button" class="btn btn-primary buttonQuotation d-block w-100" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
                 Cotação
               </button>
-              <div>
+              <div class="cardLinks">
                 <div>Compartilhe</div>
-                <div>F</div>
-                <div>W</div>
+                <img src="./icons/svg/facebook-default@2x.png" />
+                <img src="./icons/svg/whatsapp-default@2x.png">
               </div>
             </div>
           </div>
@@ -107,13 +353,14 @@
             <img src="./imgs/veiculos/m3.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">BMW M3 Competition</h5>
-              <button type="button" class="btn btn-primary buttonQuotation" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              <button type="button" class="btn btn-primary buttonQuotation d-block w-100" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
                 Cotação
               </button>
-              <div>
+              <div class="cardLinks">
                 <div>Compartilhe</div>
-                <div>F</div>
-                <div>W</div>
+                <img src="./icons/svg/facebook-default@2x.png" />
+                <img src="./icons/svg/whatsapp-default@2x.png">
               </div>
             </div>
           </div>
@@ -123,13 +370,14 @@
             <img src="./imgs/veiculos/m5.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">BMW M5</h5>
-              <button type="button" class="btn btn-primary buttonQuotation" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              <button type="button" class="btn btn-primary buttonQuotation d-block w-100" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
                 Cotação
               </button>
-              <div>
+              <div class="cardLinks">
                 <div>Compartilhe</div>
-                <div>F</div>
-                <div>W</div>
+                <img src="./icons/svg/facebook-default@2x.png" />
+                <img src="./icons/svg/whatsapp-default@2x.png">
               </div>
             </div>
           </div>
@@ -139,13 +387,14 @@
             <img src="./imgs/veiculos/x2.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">BMW X2</h5>
-              <button type="button" class="btn btn-primary buttonQuotation" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              <button type="button" class="btn btn-primary buttonQuotation d-block w-100" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
                 Cotação
               </button>
-              <div>
+              <div class="cardLinks">
                 <div>Compartilhe</div>
-                <div>F</div>
-                <div>W</div>
+                <img src="./icons/svg/facebook-default@2x.png" />
+                <img src="./icons/svg/whatsapp-default@2x.png">
               </div>
             </div>
           </div>
@@ -155,13 +404,14 @@
             <img src="./imgs/veiculos/serie-4.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">BMW Série 4</h5>
-              <button type="button" class="btn btn-primary buttonQuotation" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              <button type="button" class="btn btn-primary buttonQuotation d-block w-100" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
                 Cotação
               </button>
-              <div>
+              <div class="cardLinks">
                 <div>Compartilhe</div>
-                <div>F</div>
-                <div>W</div>
+                <img src="./icons/svg/facebook-default@2x.png" />
+                <img src="./icons/svg/whatsapp-default@2x.png">
               </div>
             </div>
           </div>
@@ -171,13 +421,14 @@
             <img src="./imgs/veiculos/serie-3.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">BMW Série 3</h5>
-              <button type="button" class="btn btn-primary buttonQuotation" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              <button type="button" class="btn btn-primary buttonQuotation d-block w-100" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
                 Cotação
               </button>
-              <div>
+              <div class="cardLinks">
                 <div>Compartilhe</div>
-                <div>F</div>
-                <div>W</div>
+                <img src="./icons/svg/facebook-default@2x.png" />
+                <img src="./icons/svg/whatsapp-default@2x.png">
               </div>
             </div>
           </div>
@@ -187,13 +438,14 @@
             <img src="./imgs/veiculos/z4.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">BMW Z4</h5>
-              <button type="button" class="btn btn-primary buttonQuotation" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              <button type="button" class="btn btn-primary buttonQuotation d-block w-100" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
                 Cotação
               </button>
-              <div>
+              <div class="cardLinks">
                 <div>Compartilhe</div>
-                <div>F</div>
-                <div>W</div>
+                <img src="./icons/svg/facebook-default@2x.png" />
+                <img src="./icons/svg/whatsapp-default@2x.png">
               </div>
             </div>
           </div>
@@ -203,19 +455,71 @@
             <img src="./imgs/veiculos/serie2.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">BMW Série 2</h5>
-              <button type="button" class="btn btn-primary buttonQuotation" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              <button type="button" class="btn btn-primary buttonQuotation d-block w-100" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
                 Cotação
               </button>
-              <div>
+              <div class="cardLinks">
                 <div>Compartilhe</div>
-                <div>F</div>
-                <div>W</div>
+                <img src="./icons/svg/facebook-default@2x.png" />
+                <img src="./icons/svg/whatsapp-default@2x.png">
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!--- Modal de Cotação -->
+    <div id="quotationContainer">
+      <form class="row g-2">
+        <div class="col-12 quoteCarIconContainer">
+          <div class="quoteCarIcon"></div>
+          <h6>Solicitar cotação</h6>
+        </div>
+        <div class="col-12 form-floating">
+          <input type="text" class="form-control" placeholder="Nome">
+          <label for="text">Nome</label>
+        </div>
+        <div class="col-12 form-floating">
+          <input type="email" class="form-control" id="inputEmail" placeholder="E-Mail">
+          <label for="text">E-mail</label>
+        </div>
+        <div class="col-12 form-floating">
+          <input type="text" class="form-control" id="inputPhone" placeholder="Telefone">
+          <label for="text">Telefone</label>
+        </div>
+        <div class="col-12">
+          <select class="form-select" id="cidades" list="datalistOptions">
+            <option selected>Modelo</option>
+            <option value="1">BMW Série 1</option>
+            <option value="2">BMW M3 Competition</option>
+            <option value="3">BMW M5</option>
+            <option value="4">BMW X2</option>
+            <option value="5">BMW Série 4</option>
+            <option value="6">BMW Série 3</option>
+            <option value="7">BMW Z4</option>
+            <option value="8">BMW Série 2</option>
+          </select>
+        </div>
+        <div class="col-12 form-floating">
+          <input type="text" class="form-control" id="inputMessage" placeholder="Mensagem">
+          <label for="text">Mensagem</label>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label quoteCheck" for="gridCheck">
+              Aceito a <strong>Política de Privacidade</strong>
+            </label>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary d-block w-100 buttonQuotation">Enviar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
 
     <!--- Modal -->
     <div class="modal con" id="staticBackdrop" data-bs-keyboard="false" tabindex="-1"
@@ -237,9 +541,24 @@
       </div>
     </div>
   </main>
-  
-  <footer>
 
+  <footer>
+    <div class="footerContainer">
+      <div class="footerText">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a elementum orci, vitae commodo nibh. In vitae
+          convallis nisl. Morbi rhoncus mattis purus sed commodo. Integer rhoncus ex risus. Proin efficitur elit nunc,
+          ut pulvinar massa egestas in. Fusce quis quam viverra, pretium quam ac, consectetur lectus.</p>
+      </div>
+      <div class="footerImages">
+        <div class="bmwLogoFooter"><img src="./imgs/logos/logo-bmw-rio.svg"></div>
+        <div class="copyrightFooter">
+          <p>© Copyright © 2021 Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="alpesLogoFooter">
+          <p>Feito por:</p><img src="./imgs/logos/logo-alpes.png">
+        </div>
+      </div>
+    </div>
   </footer>
 
 

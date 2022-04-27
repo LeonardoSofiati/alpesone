@@ -1,6 +1,15 @@
-// var myModal = document.getElementById('myModal')
-// var myInput = document.getElementById('myInput')
+$("#whatsapp").click(function (e) { 
+    e.preventDefault();
+    alert('Teste')
+});
 
-// myModal.addEventListener('shown.bs.modal', function () {
-//   myInput.focus()
-// })
+$(window).scroll(function () { 
+    if(this.scrollY > 200) {
+        console.log('Andou')
+        $(".navbar").css({"display": "none"})
+        $('#quotationContainer').css({"display": "none"})
+    } else {
+        $(".navbar").css({"display": "flex"})
+        $('#quotationContainer').css({"display": "flex"})
+    }
+});
