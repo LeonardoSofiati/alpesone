@@ -151,6 +151,11 @@ main {
     cursor: pointer;
 }
 
+.containerHeaderMenuContact li:nth-child(3) {
+   background-color: #25D366;
+}
+
+
 .cardBody {
     border: transparent
 }
@@ -192,12 +197,12 @@ main {
     padding-bottom: 10px;
 }.navbarTwoMobile
 
-#whatsapp {
-    background-color: #25D366;
+#whatsapp2 {
+    background-color: #25D366 !important;
 }
 
-#whatsapp:hover {
-    background-color: #35AA61;
+#whatsapp2:hover {
+    background-color: #35AA61 !important;
 }
 
 .containerHeaderMenuListContainer {

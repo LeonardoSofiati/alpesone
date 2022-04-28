@@ -1,8 +1,3 @@
-$("#whatsapp").click(function (e) { 
-    e.preventDefault();
-    alert('Teste')
-});
-
 let windowWidth = $(window).innerWidth();
 
 if(windowWidth < 400) {
