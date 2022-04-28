@@ -71,6 +71,36 @@ main {
     padding: 0px !important;
 }
 
+.navbarDesktop {
+    display: flex;
+}
+
+.navbarDesktopNoShow {
+    display: none;
+}
+
+.navbarMobile {
+    position: fixed;
+    display: absolute;
+    z-index: 99999999999999999999999999999;
+    height: 10%;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbarMobileNoShow {
+    display: none;
+}
+
+/* .navbarMobileDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8px;
+
+} */
+
 .containerHeader {
     height: 100%;
     width: 100vw;
@@ -152,6 +182,16 @@ main {
     background-color: white;
 }
 
+#collapse3 {
+    position: absolute;
+    right: 0;
+    z-index: 99999999999999999;
+    width: 20vw;
+    background-color: white;
+    box-shadow: 1px 2px 20px black;
+    padding-bottom: 10px;
+}.navbarTwoMobile
+
 #whatsapp {
     background-color: #25D366;
 }
@@ -167,9 +207,8 @@ main {
     border: none;
 }
 
-#accordionExample, .accordion {
+#accordionExample, .accordion, .accordionExample3 {
     border: none;
-    height: 50px;
 }
 
 .accordion-item  {
@@ -189,7 +228,8 @@ main {
     cursor: pointer;
 }
 
-.accordion-button{
+
+.accordion-button::before{
     padding: 0px;
     background-color: white;
     border: none;
@@ -342,6 +382,7 @@ footer{
     display: flex;
     flex-direction: row;
     align-items: center;
+
 }
 
 .copyrightFooter p{
@@ -353,18 +394,34 @@ footer{
 }
 
 #quotationContainer {
+    display: flex;
     position: absolute;
-    z-index: 999999;
+    z-index: 99999999;
     width: 250px;
-    height: auto;
-    top: 23%;
+    top: 40px;
     padding: 5px;
     right: 15%;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     opacity: 1;
 }
 
-#quotationContainer form {
+.quotationContainer form {
+    padding: 8px;
+}
+
+.quotationContainer2 {
+    display: flex;
+    position: absolute;
+    z-index: 9999999999;
+    width: 250px;
+    top: 0px;
+    padding: 5px;
+    right: 0px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+#quotationContainer2 form {
     padding: 8px;
 }
 
@@ -403,6 +460,7 @@ footer{
     margin: 0px;
 }
 
+
 .quoteCarIcon {
     background: url('./icons/svg/carro.svg');
     height: 20px;
@@ -428,3 +486,40 @@ footer{
     padding-right: 60px;
 }
 
+#accordion-body2{
+    padding: 0px !important;
+    margin: 0px !;
+}
+
+.quoteNavButton {
+    background-color: #1C69D4 !important;
+    color: white !important;
+    border: none !important;
+    width: 100% !important;
+    margin: 0px !important;
+    border-radius: 0px !important;
+    font-size: 14px !important;
+    border: none !important;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xx {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media (max-width: 400px) {
+    #navbarOne {
+        display: none;
+    }
+
+    .navbarTwoMobile {
+        position: fixed;
+        display: absolute;
+        top: 0px;
+        height: 10%;
+    }
+
+    .quotationContainer2{
+        width: 100vw;
+    }
+}
